@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26FA93A0-3BA2-45FD-B3AB-A0D9A13AA950}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinformPoject0527</RootNamespace>
+    <AssemblyName>WinformPoject0527</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1-1BuyerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-1BuyerLogin.Designer.cs">
+      <DependentUpon>1-1BuyerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="0Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="0Login.Designer.cs">
+      <DependentUpon>0Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-2BuyerRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-2BuyerRegister.Designer.cs">
+      <DependentUpon>1-2BuyerRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-3BuyerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-3BuyerMain.Designer.cs">
+      <DependentUpon>1-3BuyerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-4BuyerAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-4BuyerAdd.Designer.cs">
+      <DependentUpon>1-4BuyerAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-5BuyerRegisterEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-5BuyerRegisterEdit.Designer.cs">
+      <DependentUpon>1-5BuyerRegisterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-6BuyerShoppingCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-6BuyerShoppingCart.Designer.cs">
+      <DependentUpon>1-6BuyerShoppingCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-7BuyerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-7BuyerEdit.Designer.cs">
+      <DependentUpon>1-7BuyerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-8BuyerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-8BuyerList.Designer.cs">
+      <DependentUpon>1-8BuyerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-9BuyerListEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-9BuyerListEnd.Designer.cs">
+      <DependentUpon>1-9BuyerListEnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1-10BuyerListAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1-10BuyerListAll.Designer.cs">
+      <DependentUpon>1-10BuyerListAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EFModels\AppDbContext.cs" />
+    <Compile Include="EFModels\Order.cs" />
+    <Compile Include="EFModels\OrderDetail.cs" />
+    <Compile Include="EFModels\PaymentMethod.cs" />
+    <Compile Include="EFModels\Product.cs" />
+    <Compile Include="EFModels\ProductCategory.cs" />
+    <Compile Include="EFModels\ProductInventory.cs" />
+    <Compile Include="EFModels\ProductMainCategory.cs" />
+    <Compile Include="EFModels\ProductsStock.cs" />
+    <Compile Include="EFModels\Seller.cs" />
+    <Compile Include="EFModels\Shipment.cs" />
+    <Compile Include="EFModels\ShippingMethod.cs" />
+    <Compile Include="EFModels\ShoppingCart.cs" />
+    <Compile Include="EFModels\ShoppingCartDetail.cs" />
+    <Compile Include="EFModels\sysdiagram.cs" />
+    <Compile Include="EFModels\User.cs" />
+    <Compile Include="IGrid.cs" />
+    <Compile Include="ProductDto.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="2-1SellerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-1SellerLogin.Designer.cs">
+      <DependentUpon>2-1SellerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-2SellerRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-2SellerRegister.Designer.cs">
+      <DependentUpon>2-2SellerRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-3SellerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-3SellerMain.Designer.cs">
+      <DependentUpon>2-3SellerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-5SellerProductMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-5SellerProductMain.Designer.cs">
+      <DependentUpon>2-5SellerProductMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-4SellerRegisterEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-4SellerRegisterEdit.Designer.cs">
+      <DependentUpon>2-4SellerRegisterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-6SellerProductAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-6SellerProductAdd.Designer.cs">
+      <DependentUpon>2-6SellerProductAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-7SellerShipmentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-7SellerShipmentEdit.Designer.cs">
+      <DependentUpon>2-7SellerShipmentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-8SellerShipmentsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-8SellerShipmentsView.Designer.cs">
+      <DependentUpon>2-8SellerShipmentsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2-9SellerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2-9SellerList.Designer.cs">
+      <DependentUpon>2-9SellerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCartDto.cs" />
+    <EmbeddedResource Include="0Login.resx">
+      <DependentUpon>0Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-1BuyerLogin.resx">
+      <DependentUpon>1-1BuyerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-2BuyerRegister.resx">
+      <DependentUpon>1-2BuyerRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-3BuyerMain.resx">
+      <DependentUpon>1-3BuyerMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-4BuyerAdd.resx">
+      <DependentUpon>1-4BuyerAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-5BuyerRegisterEdit.resx">
+      <DependentUpon>1-5BuyerRegisterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-6BuyerShoppingCart.resx">
+      <DependentUpon>1-6BuyerShoppingCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-7BuyerEdit.resx">
+      <DependentUpon>1-7BuyerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-8BuyerList.resx">
+      <DependentUpon>1-8BuyerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-9BuyerListEnd.resx">
+      <DependentUpon>1-9BuyerListEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1-10BuyerListAll.resx">
+      <DependentUpon>1-10BuyerListAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-3SellerMain.resx">
+      <DependentUpon>2-3SellerMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-5SellerProductMain.resx">
+      <DependentUpon>2-5SellerProductMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-9SellerList.resx">
+      <DependentUpon>2-9SellerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="2-1SellerLogin.resx">
+      <DependentUpon>2-1SellerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-2SellerRegister.resx">
+      <DependentUpon>2-2SellerRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-4SellerRegisterEdit.resx">
+      <DependentUpon>2-4SellerRegisterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-6SellerProductAdd.resx">
+      <DependentUpon>2-6SellerProductAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-7SellerShipmentEdit.resx">
+      <DependentUpon>2-7SellerShipmentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2-8SellerShipmentsView.resx">
+      <DependentUpon>2-8SellerShipmentsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
